@@ -1,2 +1,4 @@
 # CFedCD
 Clustering-Based Federated Causal Discovery for Multicenter Clinical Data Analysis
+
+The CFedCD framework integrates advanced representation learning and federated optimization techniques to address inherent data heterogeneity and privacy constraints in distributed causal learning tasks. Each client independently extracts high-dimensional feature summaries from local Electronic Medical Records (EMRs) using a deep ensemble model, which captures complex data distributions while preserving privacy. These locally computed summaries are then aggregated at the server side, where K-means clustering is applied to group clients with similar data characteristics into federated clusters. Within each cluster, the collaborative construction of cluster-specific causal graphs is facilitated through adaptive aggregation strategies and regularization techniques to mitigate the impact of distribution shifts.
