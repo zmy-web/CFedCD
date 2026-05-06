@@ -75,10 +75,10 @@ score <- (origScore-min(origScore))/(max(origScore)-min(origScore))
 #score <- 1/(1+exp(-scale(origScore)))
 
 #Client IDs categorized by groups
-si= c(1:4,10,11,13:16,18:22,24)
-#si=c(7:9,12,17,23,25,26)
-#si=c(5,6)
-#si=27:30
+si= c(1:4,10,11,13:16,18:22,24)#C1
+#si=c(7:9,12,17,23,25,26)#C2
+#si=c(5,6)#C3
+#si=27:30#C4
 N=58# num of nodes
 summat <- matrix(0,nrow =N,ncol=N)
 wsum <-0
