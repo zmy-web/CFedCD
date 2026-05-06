@@ -40,7 +40,7 @@ dd <- cbind(dt, cluster = km_result$cluster)
 
 #table(dd$cluster)
 dd$cluster
-#进行可视化展示
+
 cid <- data.frame(sid=rownames(dt),ci=dd$cluster)
 head(cid)
 C1 =which(cid$ci==1)
