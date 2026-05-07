@@ -34,7 +34,7 @@ library(Rcpp)
 # reticulate::py_install("matplotlib")
 #py_config()
 
-source_python(".../CFedCD/notears.py")
+source_python(".../CFedCD/CBAMN.py")
 
 
 ###################################################################
