@@ -4,7 +4,9 @@ Clustering-Based Federated Causal Discovery for Multicenter Clinical Data Analys
 The CFedCD framework integrates advanced representation learning and federated optimization techniques to address inherent data heterogeneity and privacy constraints in distributed causal learning tasks. Each client independently extracts high-dimensional feature summaries from local Electronic Medical Records (EMRs) using a deep ensemble model, which captures complex data distributions while preserving privacy. These locally computed summaries are then aggregated at the server side, where K-means clustering is applied to group clients with similar data characteristics into federated clusters. Within each cluster, the collaborative construction of cluster-specific causal graphs is facilitated through adaptive aggregation strategies and regularization techniques to mitigate the impact of distribution shifts.
 
 This repository provides a self-contained, end-to-end pipeline for the CFedCD framework. The workflow is decoupled into four main stages: privacy-preserving feature extraction, server-side clustering, local structure learning, and federated structural fusion.
+
 ############################################################################
+
 Repository Structure & Key Scripts
 DeepSets.py: A deterministic structural encoder used to generate client-level "digest vectors."
 
@@ -17,6 +19,7 @@ ClusterFLCD.R: The federated aggregation engine that coordinates cluster-specifi
 CBAMN.py: The Cycle-Breaking Algorithm based on Modified NOTEARS, used for structural optimization and DAG enforcement.
 
 ############################################################################
+
 Step 1: Privacy-Preserving Digest Extraction
 Script: DeepSets.py
 Description: Each client independently processes their discretized local Electronic Medical Records (EMRs). The Deep Sets model maps these sets into a latent space to produce digest vectors.
