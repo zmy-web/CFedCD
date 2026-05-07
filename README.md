@@ -8,6 +8,7 @@ This repository provides a self-contained, end-to-end pipeline for the CFedCD fr
 ############################################################################
 
 Repository Structure & Key Scripts
+
 DeepSets.py: A deterministic structural encoder used to generate client-level "digest vectors."
 
 cluster.R: The server-side implementation of the K-means clustering algorithm for client grouping.
