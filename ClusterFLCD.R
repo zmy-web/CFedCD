@@ -38,7 +38,7 @@ source_python(".../CFedCD/CBAMN.py")
 
 
 ###################################################################
-path='.../SC_FL_CD/1031/'
+path='.../SC_FL_CD/'
 traintest<- readRDS(paste(path,'traintest.rds',sep = ''))
 alltrain<- traintest$train
 alltest<- traintest$test
@@ -120,7 +120,7 @@ avgsummat <- round(summat/wsum,4)#
 
 
 
-#write.csv(avgsummat,paste(path,'WMC3141.csv',sep=''),row.names = TRUE)
+#write.csv(avgsummat,paste(path,'WMC41.csv',sep=''),row.names = TRUE)
 
 
 #*******************************************************
@@ -202,7 +202,7 @@ convert_to_binary <- function(matrix) {
 binary_matrix <- convert_to_binary(Wmet)
 #head(binary_matrix)
 
-#write.csv(binary_matrix,paste(path,'C4353adjM.csv',sep=''),row.names = T)
+#write.csv(binary_matrix,paste(path,'C41adjM.csv',sep=''),row.names = T)
 #summary(binary_matrix)
 
 
@@ -210,7 +210,6 @@ binary_matrix <- convert_to_binary(Wmet)
 #step4
 #*******************************************************
 #library(reshape2)
-#。
 #
 grid01 <- expand.grid(from=rownames(binary_matrix), to=colnames(binary_matrix))
 # 
