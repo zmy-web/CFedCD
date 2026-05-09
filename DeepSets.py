@@ -172,7 +172,7 @@ for i in range(len(id)):
     print('this is runing:',i)
     onedf = df[df['hospitalid']==id[i]]
     onedt = onedf.drop(['hospitalid'],axis=1)#
-    #path='E:/deepset/site%s'% id[i]+'.csv'
+    #path='.../deepset/site%s'% id[i]+'.csv'
     #onedt.to_csv(path,index=False)
     
     km = KModes(n_clusters=5,init='Huang',n_init=5,verbose=1)
