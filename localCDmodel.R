@@ -21,7 +21,7 @@ library(pROC)
 library(modEvA)
 library(bnlearn)
 
-traintest<- readRDS(".../1023/traintest.rds")
+traintest<- readRDS(".../traintest.rds")
 alltrain<- traintest$train
 alltest<- traintest$test
 
@@ -58,7 +58,7 @@ prcCI <- function(pred_scores,true_labels) {
     auprc_values[i] <- pr_obj$auc.integral
   }
   
-  # 计算置信区间
+  # 
   ci <- quantile(auprc_values, probs = c(0.025, 0.975))
   return(print(paste(round(ci[1],4),round(ci[2],4),sep='~')))
 }
