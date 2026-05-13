@@ -3,7 +3,7 @@ rm(list = ls())
 library(cluster)
 library(factoextra)
 library(klaR)
-dt <- read.csv('.../DigestVector.csv')
+dt <- read.csv('.../data/DigestVector.csv')
 dim(dt)
 
 df <- scale(dt) 
