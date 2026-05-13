@@ -177,10 +177,9 @@ dataset=avgsummat
 cat("sum:", sum(dataset))
 
 ######################################################
-# c1=c(0.5,1,1.5,2)
-# c2=c(0.5,1,2,4)
+
 #######################################################
-#l1=0.1,l2=1,thed=0.1
+
 W_est = notears_linear(as.matrix(dataset), lambda1=0.5, lambda2=1, loss_type='l2',
                       # h_tol=as.numeric(1e-8), rho_max=as.numeric(1e+16),
                        w_threshold = 0.1)#
