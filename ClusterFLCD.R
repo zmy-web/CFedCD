@@ -38,7 +38,7 @@ source_python(".../CFedCD/CBAMN.py")
 
 
 ###################################################################
-path='.../SC_FL_CD/'
+path='.../data/'
 traintest<- readRDS(paste(path,'traintest.rds',sep = ''))
 alltrain<- traintest$train
 alltest<- traintest$test
