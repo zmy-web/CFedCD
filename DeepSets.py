@@ -197,4 +197,4 @@ siteid = ["site" + str(i) for i in id]
 y2.index = siteid
 
 
-#y2.to_csv('...data/DigestVector.csv',index=True)
+#y2.to_csv('.../data/DigestVector.csv',index=True)
