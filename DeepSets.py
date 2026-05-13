@@ -9,7 +9,7 @@ np.random.seed(seed)
 torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 
-df = pd.read_csv('.../alltrain.csv')
+df = pd.read_csv('.../data/alltrain.csv')
 df= df.apply(pd.to_numeric,errors='coerce')
 
 r"""
@@ -197,4 +197,4 @@ siteid = ["site" + str(i) for i in id]
 y2.index = siteid
 
 
-#y2.to_csv('.../DigestVector.csv',index=True)
+#y2.to_csv('...data/DigestVector.csv',index=True)
