@@ -21,7 +21,7 @@ library(pROC)
 library(modEvA)
 library(bnlearn)
 
-traintest<- readRDS(".../traintest.rds")
+traintest<- readRDS("...data/traintest.rds")
 alltrain<- traintest$train
 alltest<- traintest$test
 
@@ -157,9 +157,9 @@ localres <- measM
 scoreM #
 scoreDT = data.frame(sid= st,score=scoreM)
 
-write.csv(localres,".../valres/localMeares.csv")#
-write.csv(scoreDT,".../valres/locscoreDT.csv")
-saveRDS(adjmat,".../valres/localadjmat.rds")
-saveRDS(strength,".../valres/localstrength.rds")
-saveRDS(predList,".../valres/LocalpredList.rds")
+write.csv(localres,".../data/localMeares.csv")#
+write.csv(scoreDT,".../data/locscoreDT.csv")
+saveRDS(adjmat,".../data/localadjmat.rds")
+saveRDS(strength,".../data/localstrength.rds")
+saveRDS(predList,".../data/LocalpredList.rds")
 
