@@ -12,6 +12,13 @@ torch.cuda.manual_seed(seed)
 df = pd.read_csv('.../data/alltrain.csv')
 df= df.apply(pd.to_numeric,errors='coerce')
 
+"""
+    Deep Sets module for deterministic representation encoding.
+    
+    NOTE: This module functions as a FIXED encoder. Its parameters are frozen 
+    and no training loop or gradient updates are involved for this specific module.
+"""
+
 r"""
 Permutation Invariant layers and Permutation Equivariant, as described in the
 paper Deep Sets, by Zaheer et al. (https://arxiv.org/abs/1703.06114)
